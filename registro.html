@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Cofrade</title>
+</head>
+<body>
+    <div class="container">
+        <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading" style="background:#0077B5">
+                    <div class="panel-title" style="color:aliceblue">Reg&iacute;strate</div>
+                    <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="index.html">Iniciar Sesi&oacute;n</a></div>
+                </div>  
+                
+                <div class="panel-body" >
+                    
+                    <form id="signupform" class="form-group row" role="form" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" autocomplete="off">
+                        
+                        <div id="signupalert" style="display:none" class="alert alert-danger">
+                            <p>Error:</p>
+                            <span></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nombre" class="col-md-3 control-label">Nombre:</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email" class="col-md-3 control-label">Email:</label>
+                            <div class="col-md-9">
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="password" class="col-md-3 control-label">Password:</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="password" class="col-md-3 control-label">Confirmar Password:</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control" name="con_password" placeholder="Confirmar Password" required>
+                            </div>
+                        </div>
+                        <br><br>
+                        <!-- <div class="form-group">
+                            <label for="captcha" class="col-md-3 control-label"></label>
+                            <div class="g-recaptcha col-md-9" data-sitekey="6LfUkWEUAAAAAKwPbWbGlBNafH9SuuMlcWwUVAzK"></div>
+                        </div> -->
+                        
+                        <div class="form-group">                                      
+                            <div class="col-md-offset-3 col-md-9">
+                                <button id="btn-signup" type="submit" class="btn btn-primary"><i class="icon-hand-right"></i>Registrar</button> 
+                            </div>
+                        </div>
+                    </form>
+                    <?php echo resultBlock($errors); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="js/metisMenu/metisMenu.min.js"></script>
+    <script src="js/metisMenu/metisMenu-active.js"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="js/morrisjs/raphael-min.js"></script>
+    <script src="js/morrisjs/morris.js"></script>
+    <script src="js/morrisjs/morris-active.js"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="js/calendar/moment.min.js"></script>
+    <script src="js/calendar/fullcalendar.min.js"></script>
+    <script src="js/calendar/fullcalendar-active.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="js/main.js"></script>
+</body>
+</html>
